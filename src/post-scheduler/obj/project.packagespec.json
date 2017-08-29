@@ -1,0 +1,43 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "/Users/lukeparker/Documents/Projects/Other/post-scheduler/src/post-scheduler/post-scheduler-core.csproj",
+    "projectName": "post-scheduler-core",
+    "projectPath": "/Users/lukeparker/Documents/Projects/Other/post-scheduler/src/post-scheduler/post-scheduler-core.csproj",
+    "outputPath": "/Users/lukeparker/Documents/Projects/Other/post-scheduler/src/post-scheduler/obj/",
+    "projectStyle": "PackageReference",
+    "originalTargetFrameworks": [
+      "netcoreapp2.0"
+    ],
+    "frameworks": {
+      "netcoreapp2.0": {
+        "projectReferences": {}
+      }
+    }
+  },
+  "frameworks": {
+    "netcoreapp2.0": {
+      "dependencies": {
+        "Microsoft.NETCore.App": {
+          "target": "Package",
+          "version": "2.0.0"
+        },
+        "Nancy": {
+          "target": "Package",
+          "version": "2.0.0-clinteastwood"
+        }
+      }
+    }
+  },
+  "runtimes": {
+    "win": {
+      "#import": []
+    },
+    "win-x64": {
+      "#import": []
+    },
+    "win-x86": {
+      "#import": []
+    }
+  }
+}
