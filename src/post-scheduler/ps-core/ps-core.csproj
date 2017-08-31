@@ -1,7 +1,15 @@
-<Project Sdk="Microsoft.NET.Sdk">
-
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
-
+  <ItemGroup>
+    <ProjectReference Include="..\ps-adaptors\ps-adaptors.csproj">
+      <Project>{ABA44B48-68D6-4469-B925-35E7E4FEDAAD}</Project>
+      <Name>ps-adaptors</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ps-entities\ps-entities.csproj">
+      <Project>{3262E1B6-8A8C-4047-9D31-6DC95E82DD79}</Project>
+      <Name>ps-entities</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>

@@ -2,4 +2,10 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ps-entities\ps-entities.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Adaptors" />
+  </ItemGroup>
 </Project>
