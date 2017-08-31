@@ -10,6 +10,7 @@ namespace ps_core
 {
     public static class PsCore
     {
+        private static bool _initialised = false;
         private static List<ScheduleItem> _scheduledItems;
         private static List<IAdaptor> _postAdaptors;
 
@@ -17,18 +18,19 @@ namespace ps_core
         {
             _scheduledItems = items;
             _postAdaptors = adaptors;
-            
+            _initialised = true;
         }
 
         public static bool Start()
         {
             //TODO: Initialise a timer to poll the CheckPost function.
-            return true;
+            return _initialised;
         }
         
         public static bool Stop()
         {
             //TODO: Save existing scheduled items before closedown?
+            _initialised = false;
             return true;
         }
 
@@ -40,8 +42,6 @@ namespace ps_core
             _scheduledItems.Add(new ScheduleItem(Guid.NewGuid(),data,postingTo));
             return true;
         }
-
-        
 
         private static void CheckPost()
         {
